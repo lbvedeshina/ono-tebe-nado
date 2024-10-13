@@ -1,1 +1,75 @@
 /* место для вашего кода */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 1052px;
+  height: 105px;
+  margin: 92px 24px;
+}
+
+.header_menu {
+  display: block;
+  width: 391.48px;
+  height: 105px;
+  justify-self: start;
+}
+
+/*.header_link-list {
+  display: inline-block; 
+ -- тут надо резделить в строку слова --
+}*/
+
+.header_link-list {
+  display: flex;
+  gap: 32px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  color: #000;
+  border-bottom: 1px solid;
+}
+
+.header_link-list-item {
+    list-style: circle;
+}
+
+.header_link-list-item_no-bullit {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+  /*justify-self: center;*/
+}
+
+.header_logo-image {
+    width: 100%;
+}
+
+.header_adress {
+  display: block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  max-width: 237px;
+  width: 100%;
+  justify-self: end;
+}
+
+.header_adress {
+  display: block;
+} 
+
+.info {
+  border-bottom: 1px solid;
+  text-decoration: none;
+  color: #000;
+}

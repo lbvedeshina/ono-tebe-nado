@@ -5,6 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- голова  -->
+    <header class="header">
+      <nav class="header_menu">
+        <ul class="header_link-list">
+          <li class="header_link-list-item header_link-list-item_no-bullit">
+            <a href="#0" class="header_link">главная</a>
+          </li>
+          <!--ссылка без кружочка перед ней-->
+          <li class="header_link-list-item">
+            <a href="#0" class="header_link">посмотреть лоты</a>
+          </li>
+          <li class="header_link-list-item">
+            <a href="#0" class="header_link">об аукционе</a>
+          </li>
+          <!-- добавить  в href ссылку -->
+        </ul>
+      </nav>
+      <div class="header_logo">
+        <img
+          src="./images/logo-black.svg"
+          alt="черный логотип шапки"
+          class="header_logo-image"
+        />
+      </div>
+      <address class="header_adress">
+        <a class="info" href="tel:+70000000">+7(000)000-00-00</a>
+        <a class="info" href="mailto:mail@example.com">mail@example.com</a>
+        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
+      </address>
+    </header>
+    <!-- конец головы -->
+    <main>
+      <!-- первая секция -->
+      <cover></cover>
+      <!-- конец первой секции -->
+
+      <!-- секция с карточками -->
+      <loots></loots>
+      <!-- конец секции с карточками -->
+
+      <!-- секция с информацией об аукционе -->
+      <about></about>
+      <!-- конец секции с информацией об аукционе -->
+    </main>
+    <!-- подвал сайта -->
+    <footer></footer>
+    <!-- конец подвала сайта -->
+  </body>
 </html>
