@@ -23,6 +23,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
+  text-underline-offset: 4px;
 }
 
 .header__link-list-item {
@@ -53,7 +54,10 @@
   max-width: 237px;
   width: 100%;
   justify-self: end;
+  text-decoration: none;
+  text-underline-offset: 4px;
 }
+
 
 .overlay {
   position: absolute;
@@ -146,4 +150,132 @@
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  }
+
+  .lots {
+  width: 100%;
+  /*background-color: #fff;*/
+  margin-bottom: 183px;
+  padding: 179px 24px 0px 24px;
+  font-family: Raleway;
+  font-style: normal;
+  color: #fff;
+  }
+
+  .lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  }
+
+  .lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: space-between;
+  }
+
+  .lots__card-list-item {
+  display: block;
+  }
+
+  .card__link {
+  display: block;
+  height: 100%;
+  }
+
+  .card {
+  display: flex;
+  position: relative;
+  inset: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  height: 563px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  }
+
+  .card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+  }
+  
+  .card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+  }
+  .card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+  }
+  
+  .card__title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 26.4px;
+  padding: 51px 40px 0px 40px;
+  z-index: 3;
+  }
+
+  .card__text {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: none;
+  line-height: 24.4px;
+  padding: 0px 40px 48px 40px;
+  z-index: 3;
+  }
+
+  .lots__look-more-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: underline;
+  line-height: 23.48px;
+  width: 100%;
+  padding: 30px 0px 0px 40px;
+  }
+
+  .about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  }
+
+  .about__column-left {
+    /* ПРОВЕРИТЬ*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+
+  }
+
+  .about__column-right {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  }
+
+
+  .about__logo {
+
+  }
+
+  .about__logo-image {
+  display: block;
+  width: 148px;
+  height: 114px;
+  }
+
+  .about__title {
+
+  }
+
+  .about__text {
+  padding-bottom: 24px;
   }
