@@ -37,12 +37,16 @@
   height: 105px;
 }
 
-.header__adress {
+.adress {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
   text-underline-offset: 4px;
+}
+
+.header__adress {
+  justify-self: end;
   padding-left: 188px;
 }
 
@@ -50,7 +54,7 @@
   position: absolute;
   z-index: 1;
   inset: 0;
-  background-color: rgb(0 0 0 / 0.5);
+  background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover {
@@ -120,7 +124,7 @@
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background: transparent;
   font-style: normal;
   font-weight: 500;
@@ -131,7 +135,6 @@
 
 .lots {
   margin: 179px 24px 0px 24px;
-  font-family: Raleway;
   font-style: normal;
   color: #fff;
 }
@@ -166,7 +169,7 @@
   inset: 0;
   flex-direction: column;
   justify-content: space-between;
-  height: 563px;
+  min-height: 563px;
   background-size: cover;
   background-position: center;
 }
@@ -197,11 +200,12 @@
   font-weight: 400;
   text-decoration-line: none;
   line-height: 24.4px;
-  padding: 0px 40px 48px 40px;
+  padding: 0px 40px 40px 40px;
   z-index: 3;
 }
 
 .lots__look-more-link {
+  display: block;
   font-size: 20px;
   font-weight: 400;
   color: #000;
@@ -214,9 +218,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
-  margin: 179px 24px 0px 24px;
-  min-height: 580px;
-  font-family: Raleway;
+  row-gap: 15px;
+  margin: 180px 24px 0px 24px;
   font-style: normal;
   color: #000;
 }
@@ -226,7 +229,7 @@
   height: 240px;
   margin-left: 45px;
   padding: 64px 45.52px 62px 46.48px;
-  border-radius: 125px;
+  border-radius: 50%;
   background-color: #000;
 }
 
@@ -252,27 +255,20 @@
   grid-column-end: 4;
   font-size: 20px;
   line-height: 24px;
-  padding-bottom: 10px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 180px 1fr;
-  margin: 164px 50px 0px 50px;
+  margin: 185px 50px 90px 50px;
 }
 
 .footer__adress {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
   max-width: 237px;
-  text-underline-offset: 4px;
 }
 
 .footer__menu {
   width: 149px;
-  height: 64px;
   justify-self: center;
 }
 
